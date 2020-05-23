@@ -6,5 +6,5 @@ Before you look at how Kubernetes does what it does, let’s take a closer look 
  * Kubernetes cluster is split into two parts:
     *  The Kubernetes Control Plane 
     * The (worker) nodes
-Let’s look more closely at what these two parts do and what’s running inside them.
+- Let’s look more closely at what these two parts do and what’s running inside them.
     
