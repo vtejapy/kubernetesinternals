@@ -13,3 +13,16 @@ The Control Plane is what controls and makes the whole cluster function.the comp
   * The API server
   * The Scheduler
   * The Controller Manager
+These components store and manage the state of the cluster, but they aren’t what runs the application containers.
+### COMPONENTS RUNNING ON THE WORKER NODES
+The task of running your containers is up to the components running on each worker node:
+   * The Kubelet
+   * The Kubernetes Service Proxy (kube-proxy)
+   * The Container Runtime (Docker, rkt, or others)
+### ADD-ON COMPONENTS
+Beside the Control Plane components and the components running on the nodes, a few add-on components are required for the cluster to provide everything discussed so far. This includes
+   * The Kubernetes DNS server
+   * The Dashboard
+   * An Ingress controller
+   * Heapster
+   * The Container Network Interface network plugin
