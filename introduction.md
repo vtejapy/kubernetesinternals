@@ -36,9 +36,8 @@ The previously mentioned components all run as individual processes. The compone
 ### Checking the status of the Control Plane components
 The API server exposes an API resource called ComponentStatus, which shows the health status of each Control Plane component. You can list the components and their statuses with kubectl:
 ```
-$ kubectl get componentstatuses
-NAME STATUS MESSAGE
-scheduler Healthy ok 
-controller-manager Healthy ok
-etcd-0 Healthy {"health": "true"} ERROR
-```
+[vagrant@kmaster ~]$ kubectl get componentstatus
+NAME                 STATUS    MESSAGE             ERROR
+controller-manager   Healthy   ok                  
+etcd-0               Healthy   {"health":"true"}   
+scheduler            Healthy   ok           ```
