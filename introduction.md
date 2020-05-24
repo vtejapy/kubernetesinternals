@@ -38,7 +38,7 @@ The API server exposes an API resource called ComponentStatus, which shows the h
 ```
 $ kubectl get componentstatuses
 NAME STATUS MESSAGE
-scheduler Healthy ok controller-manager Healthy ok
-etcd-0 Healthy {"health": "true"}
+scheduler Healthy ok 
+controller-manager Healthy ok
+etcd-0 Healthy {"health": "true"} ERROR
 ```
-ERROR
