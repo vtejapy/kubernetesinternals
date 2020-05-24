@@ -30,3 +30,15 @@ Beside the Control Plane components and the components running on the nodes, a f
 The previously mentioned components all run as individual processes. The components and their inter-dependencies are shown in figure below
 ![diagram1](diagrams/image1.png)
   To get all the features Kubernetes provides, all these components need to be running. But several can also perform useful work individually without the other components. You’ll see how as we examine each of them.
+  
+  
+  
+### Checking the status of the Control Plane components
+The API server exposes an API resource called ComponentStatus, which shows the health status of each Control Plane component. You can list the components and their statuses with kubectl:
+```
+$ kubectl get componentstatuses
+NAME STATUS MESSAGE
+scheduler Healthy ok controller-manager Healthy ok
+etcd-0 Healthy {"health": "true"}
+```
+ERROR
