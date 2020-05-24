@@ -27,6 +27,6 @@ Beside the Control Plane components and the components running on the nodes, a f
    * Heapster
    * The Container Network Interface network plugin
 ### The distributed nature of Kubernetes components
-The previously mentioned components all run as individual processes. The components and their inter-dependencies are shown in figure belos
-
+The previously mentioned components all run as individual processes. The components and their inter-dependencies are shown in figure below
+![diagram1](diagrams/image1.png)
   To get all the features Kubernetes provides, all these components need to be running. But several can also perform useful work individually without the other components. You’ll see how as we examine each of them.
